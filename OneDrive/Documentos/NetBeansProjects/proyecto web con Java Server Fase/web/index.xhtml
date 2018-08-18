@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <title>Inicio</title>
+        
+        <style>
+            .Bimage{background-image:url("imagenes/imagen/ima.jpg"); }
+        </style>
+        
+    </h:head>
+    <h:body styleClass="Bimage">                       
+        <h:form>
+        Haga clic en el botón para ir a la segunda página        
+        <h:commandButton value="Abrir segunda página" action="Abrir"></h:commandButton>
+        <br/>
+        <h:inputText id="ipTxt1" value="#{usuario.name}"/>        
+        <h:commandButton id="cBtn2" value="Enviar" action="Segunda"/>
+        <br/>
+        
+        <h:inputText id="ipTxt2" value="#{usuario.name}"/>
+        <h:commandButton id="cBtn3" value="Cargar valor"/>        
+        
+        <br/>
+        <h:outputText id="oTxt2" value="#{usuario.name}"/>
+        </h:form>
+    </h:body>
+</html>
+
